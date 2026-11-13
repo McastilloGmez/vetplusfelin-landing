@@ -1,5 +1,12 @@
-// Punto de composición de la landing.
-// Cada sección vivirá en src/sections/ y se montará aquí (fases posteriores).
+import Hero from './sections/Hero/Hero'
+import Metrics from './sections/Metrics/Metrics'
+
+// Composición de la landing. Las siguientes secciones se montarán aquí.
 export default function App() {
-  return <main id="top" />
+  return (
+    <main id="top">
+      <Hero />
+      <Metrics />
+    </main>
+  )
 }

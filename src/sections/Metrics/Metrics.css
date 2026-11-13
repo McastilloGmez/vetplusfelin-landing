@@ -1,0 +1,5 @@
+.metrics { padding-block: var(--space-12); background: var(--color-surface); border-block: 1px solid var(--color-border); }
+.metrics__grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-8) var(--space-6); text-align: center; }
+.metrics__value { font-family: var(--font-heading); font-weight: 800; font-size: clamp(1.75rem, 5vw, 2.75rem); color: var(--color-primary); line-height: 1.1; }
+.metrics__label { margin-top: var(--space-2); color: var(--color-text-muted); font-size: .95rem; }
+@media (min-width: 48rem) { .metrics__grid { grid-template-columns: repeat(4, 1fr); } }

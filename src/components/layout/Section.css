@@ -1,7 +1,6 @@
 .section {
   position: relative;
   padding-block: var(--section-padding-y);
-  scroll-margin-top: var(--space-4);
 }
 .section--soft { background: var(--color-surface); }
 

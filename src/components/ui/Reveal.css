@@ -1,0 +1,6 @@
+.reveal {
+  opacity: 0;
+  transform: translateY(var(--reveal-distance));
+  transition: opacity var(--duration-slow) var(--ease-out), transform var(--duration-slow) var(--ease-out);
+}
+.reveal.is-visible { opacity: 1; transform: none; }

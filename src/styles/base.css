@@ -13,6 +13,8 @@ h1, h2, h3, h4 {
   letter-spacing: -0.02em;
 }
 
+::selection { background: rgb(15 118 110 / .2); }
+
 :focus-visible {
   outline: 2px solid var(--color-primary);
   outline-offset: 2px;

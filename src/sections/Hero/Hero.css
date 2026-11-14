@@ -54,6 +54,8 @@
 .dash__muted { color: var(--color-text-muted); font-size: .8rem; }
 .dash__strong { font-weight: 700; font-size: 1.1rem; margin-block: var(--space-1); }
 .dash__badge { margin-left: auto; font-size: .75rem; font-weight: 600; color: #0b5d57; background: rgb(15 118 110 / .12); padding: .25rem .6rem; border-radius: 999px; }
+/* Misma altura que "Seguimiento": etiqueta arriba, servicio abajo */
+.dash__card--appt { display: flex; flex-direction: column; justify-content: space-between; }
 .dash__card--flow ul { list-style: none; padding: 0; margin-top: var(--space-2); display: grid; gap: var(--space-2); font-size: .8rem; color: var(--color-text-muted); }
 .dash__card--flow li { display: flex; align-items: center; gap: var(--space-2); }
 .dash__dot { width: .6rem; height: .6rem; border-radius: 50%; border: 2px solid var(--color-border); }

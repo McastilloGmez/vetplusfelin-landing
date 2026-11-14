@@ -1,0 +1,6 @@
+.card-grid { display: grid; gap: var(--space-6); grid-template-columns: 1fr; }
+@media (min-width: 40rem) { .card-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 64rem) {
+  .card-grid--3 { grid-template-columns: repeat(3, 1fr); }
+  .card-grid--4 { grid-template-columns: repeat(4, 1fr); }
+}

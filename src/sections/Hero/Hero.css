@@ -1,9 +1,9 @@
 .hero {
   padding-block: var(--space-12) var(--section-padding-y);
   background:
-    radial-gradient(60rem 30rem at 85% -10%, rgb(15 118 110 / 0.12), transparent 60%),
-    radial-gradient(40rem 25rem at 0% 0%, rgb(245 158 11 / 0.08), transparent 60%),
-    var(--color-bg);
+    var(--pattern-paw),
+    radial-gradient(55rem 30rem at 90% 0%, rgb(15 118 110 / 0.22), transparent 65%),
+    linear-gradient(180deg, var(--color-surface-mint) 0%, #f3faf8 100%);
   overflow: hidden;
 }
 .hero__grid { display: grid; gap: var(--space-12); align-items: center; }
@@ -66,5 +66,4 @@
   .hero { padding-top: var(--space-16); }
   .hero__grid { grid-template-columns: 1.1fr 0.9fr; gap: var(--space-16); }
   .hero__visual { margin-inline: 0; }
-  .dash__card--appt { transform: translateY(var(--space-4)); }
 }

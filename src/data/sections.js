@@ -37,6 +37,34 @@ export const steps = {
   ],
 }
 
+// Testimonios ficticios (nombres y relatos inventados)
+export const testimonials = {
+  eyebrow: 'Testimonios',
+  title: 'Dueños que hoy están más tranquilos',
+  subtitle: 'Historias de quienes confían en nosotros el cuidado de los suyos.',
+  items: [
+    { quote: 'Reservé desde el celular y me atendieron casi a la hora. Luna salió de la consulta tranquila, y yo también.', name: 'Camila R.', role: 'Dueña de Luna, gata', initials: 'CR' },
+    { quote: 'Después del diagnóstico de mi perro me escribieron para recordarme los controles. Nunca antes me habían hecho seguimiento.', name: 'Andrés M.', role: 'Dueño de Thor, perro', initials: 'AM' },
+    { quote: 'Nos asesoraron con el alimento y el presupuesto de nuestro rebaño. Claro, sin vueltas y con trato cercano.', name: 'Familia Soto', role: 'Criadores de ganado', initials: 'FS' },
+    { quote: 'Como fundación necesitamos insumos y atención constante. Nos entienden y nos explican todo en simple.', name: 'Valentina P.', role: 'Fundación Patitas Libres', initials: 'VP' },
+  ],
+}
+
+export const faq = {
+  id: 'faq',
+  eyebrow: 'Preguntas frecuentes',
+  title: 'Resolvemos tus dudas antes de tu visita',
+  subtitle: 'Si te queda alguna pregunta, la respondemos con gusto en la clínica.',
+  items: [
+    { q: '¿Cómo reservo una hora?', a: 'Pulsa "Reserva una hora", elige el servicio y el horario que mejor te acomode. Recibes la confirmación al instante.' },
+    { q: '¿Cómo funciona el descuento de primera atención?', a: 'La primera atención de tu mascota tiene un 20% de descuento. Se aplica al reservar, sin cupones ni trámites.' },
+    { q: '¿Qué animales atienden?', a: 'Perros, gatos, conejos, hámsters, aves y otras mascotas, además de ganado y animales mayores.' },
+    { q: '¿Cómo es el seguimiento después de la consulta?', a: 'Te escribimos por email o WhatsApp para recordarte controles y tratamientos, y para saber cómo evoluciona tu mascota.' },
+    { q: '¿Puedo pedir un presupuesto de alimentos e insumos?', a: 'Sí. Te entregamos un presupuesto claro de alimentos e insumos veterinarios, adaptado a tu mascota o a tu criadero.' },
+    { q: '¿Trabajan con fundaciones animalistas?', a: 'Sí. Apoyamos a fundaciones con atención veterinaria y productos para el cuidado de muchos animales.' },
+  ],
+}
+
 export const specialties = {
   eyebrow: 'Especialidades',
   title: 'Para cada animal, el cuidado adecuado',

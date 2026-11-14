@@ -4,6 +4,8 @@ import Problems from './sections/Problems/Problems'
 import Benefits from './sections/Benefits/Benefits'
 import HowItWorks from './sections/HowItWorks/HowItWorks'
 import Specialties from './sections/Specialties/Specialties'
+import Testimonials from './sections/Testimonials/Testimonials'
+import Faq from './sections/Faq/Faq'
 
 // Composición de la landing. Las siguientes secciones se montarán aquí.
 export default function App() {
@@ -15,6 +17,8 @@ export default function App() {
       <Benefits />
       <HowItWorks />
       <Specialties />
+      <Testimonials />
+      <Faq />
     </main>
   )
 }

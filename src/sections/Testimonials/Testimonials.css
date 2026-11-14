@@ -1,0 +1,26 @@
+.testimonials { display: grid; gap: var(--space-6); grid-template-columns: 1fr; }
+.testimonial {
+  display: flex; flex-direction: column; justify-content: space-between; gap: var(--space-6);
+  margin: 0; padding: var(--space-6);
+  background: #fff; border: 1px solid var(--color-border); border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+}
+.testimonial__quote { margin: 0; font-size: 1.05rem; line-height: 1.6; }
+.testimonial__quote::before { content: '“'; display: block; font-family: var(--font-heading); font-size: 2.5rem; line-height: 1; color: var(--color-accent); }
+.testimonial__author { display: flex; align-items: center; gap: var(--space-3); }
+.testimonial__avatar {
+  display: grid; place-items: center; flex: none; width: 2.75rem; height: 2.75rem;
+  border-radius: 50%; background: rgb(15 118 110 / .12); color: var(--color-primary);
+  font-weight: 700; font-size: .9rem;
+}
+.testimonial__name { display: block; font-weight: 700; }
+.testimonial__role { display: block; font-size: .85rem; color: var(--color-text-muted); }
+
+@media (min-width: 48rem) { .testimonials { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 72rem) {
+  .testimonials { grid-template-columns: repeat(4, 1fr); }
+  /* Solo desktop: el bloque del autor reserva siempre 2 líneas de rol y alinea avatar y nombre arriba,
+     así nombre, rol y avatar quedan a la misma altura en las 4 tarjetas aunque un rol ocupe 1 o 2 líneas */
+  .testimonial__author { align-items: flex-start; }
+  .testimonial__role { min-height: 3.2em; }
+}

@@ -1,0 +1,63 @@
+/* Design tokens: edítalos aquí (o en DevTools sobre :root) para retocar toda la UI. */
+:root {
+  /* Color */
+  --color-bg: #ffffff;
+  --color-surface: #f6f8f7;
+  --color-text: #14201c;
+  --color-text-muted: #55645e;
+  --color-primary: #0f766e;
+  --color-primary-hover: #0b5d57;
+  --color-accent: #f59e0b;
+  --color-border: #e2e8e5;
+  --color-dark: #0b2a26;
+  --color-surface-mint: #e3f3ef;
+  --color-surface-warm: #fff1d9;
+
+  /* Patrón de huellas (SVG). Cambia fill-opacity para hacerlo más o menos visible. */
+  --pattern-paw: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='%230f766e' fill-opacity='.08' transform='rotate(-20 60 60)'%3E%3Cellipse cx='60' cy='72' rx='14' ry='11'/%3E%3Ccircle cx='42' cy='52' r='6'/%3E%3Ccircle cx='55' cy='44' r='6'/%3E%3Ccircle cx='68' cy='44' r='6'/%3E%3Ccircle cx='80' cy='52' r='6'/%3E%3C/g%3E%3C/svg%3E");
+
+  /* Tipografía */
+  --font-body: 'Inter Variable', system-ui, sans-serif;
+  --font-heading: 'Plus Jakarta Sans Variable', 'Inter Variable', system-ui, sans-serif;
+  --fs-base: 1rem;
+  --lh-base: 1.6;
+
+  /* Espaciado */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-24: 6rem;
+  --section-padding-y: var(--space-16);
+
+  /* Layout */
+  --container-max: 72rem;
+  --container-padding: var(--space-6);
+
+  /* Movimiento */
+  --duration-fast: 150ms;
+  --duration-base: 250ms;
+  --duration-slow: 700ms;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --reveal-distance: 1.25rem;
+
+  /* Cabecera fija (también define el offset del scroll suave) */
+  --header-height: 4.25rem;
+
+  /* Forma y sombra */
+  --radius-sm: 0.5rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.5rem;
+  --shadow-md: 0 8px 24px rgb(20 32 28 / 0.08);
+}
+
+@media (min-width: 48rem) {
+  :root {
+    --section-padding-y: var(--space-24);
+    --container-padding: var(--space-8);
+  }
+}

@@ -1,0 +1,17 @@
+.section {
+  position: relative;
+  padding-block: var(--section-padding-y);
+}
+.section--soft { background: var(--color-surface); }
+
+/* Fondos con identidad veterinaria: degradado + patrón sutil de huellas (--pattern-paw en tokens.css) */
+.section--warm {
+  background:
+    var(--pattern-paw),
+    linear-gradient(180deg, var(--color-surface-warm) 0%, #fffaf0 100%);
+}
+.section--mint {
+  background:
+    var(--pattern-paw),
+    linear-gradient(180deg, var(--color-surface-mint) 0%, #f3faf8 100%);
+}

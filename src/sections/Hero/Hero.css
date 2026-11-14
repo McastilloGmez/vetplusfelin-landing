@@ -8,6 +8,11 @@
 }
 .hero__grid { display: grid; gap: var(--space-12); align-items: center; }
 
+/* Entrada del hero al cargar la página */
+@keyframes hero-in { from { opacity: 0; transform: translateY(var(--reveal-distance)); } to { opacity: 1; transform: none; } }
+.hero__content { animation: hero-in var(--duration-slow) var(--ease-out) both; }
+.hero__visual { animation: hero-in var(--duration-slow) var(--ease-out) 150ms both; }
+
 .hero__eyebrow {
   display: inline-block;
   font-size: 0.8rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase;

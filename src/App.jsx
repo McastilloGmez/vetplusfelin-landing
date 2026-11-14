@@ -1,3 +1,4 @@
+import Header from './components/layout/Header'
 import Hero from './sections/Hero/Hero'
 import Metrics from './sections/Metrics/Metrics'
 import Problems from './sections/Problems/Problems'
@@ -13,6 +14,7 @@ import Footer from './sections/Footer/Footer'
 export default function App() {
   return (
     <>
+      <Header />
       <main id="top">
         <Hero />
         <Metrics />

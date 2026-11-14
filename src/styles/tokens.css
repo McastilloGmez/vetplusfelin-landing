@@ -38,6 +38,16 @@
   --container-max: 72rem;
   --container-padding: var(--space-6);
 
+  /* Movimiento */
+  --duration-fast: 150ms;
+  --duration-base: 250ms;
+  --duration-slow: 700ms;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --reveal-distance: 1.25rem;
+
+  /* Cabecera fija (también define el offset del scroll suave) */
+  --header-height: 4.25rem;
+
   /* Forma y sombra */
   --radius-sm: 0.5rem;
   --radius-md: 1rem;

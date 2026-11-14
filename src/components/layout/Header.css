@@ -1,0 +1,52 @@
+.header {
+  position: sticky; top: 0; z-index: 50;
+  background: rgb(255 255 255 / .85);
+  -webkit-backdrop-filter: saturate(180%) blur(12px);
+  backdrop-filter: saturate(180%) blur(12px);
+  border-bottom: 1px solid var(--color-border);
+}
+.header__bar { display: flex; align-items: center; justify-content: space-between; height: var(--header-height); }
+.header__logo { font-family: var(--font-heading); font-weight: 800; font-size: 1.3rem; text-decoration: none; color: var(--color-primary); }
+
+/* Botón hamburguesa (móvil) */
+.header__toggle {
+  display: grid; place-content: center; gap: 5px; width: 2.75rem; height: 2.75rem;
+  background: none; border: 0; border-radius: var(--radius-sm); cursor: pointer;
+}
+.header__toggle span {
+  display: block; width: 1.4rem; height: 2px; border-radius: 2px; background: var(--color-text);
+  transition: transform var(--duration-base) var(--ease-out), opacity var(--duration-base);
+}
+.is-open .header__toggle span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.is-open .header__toggle span:nth-child(2) { opacity: 0; }
+.is-open .header__toggle span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* Panel desplegable (móvil) */
+.header__nav {
+  display: none;
+  position: absolute; top: 100%; left: 0; right: 0;
+  padding: var(--space-4) var(--container-padding) var(--space-6);
+  background: #fff; border-bottom: 1px solid var(--color-border); box-shadow: var(--shadow-md);
+}
+.is-open .header__nav { display: block; animation: menu-in var(--duration-base) var(--ease-out); }
+.header__links { list-style: none; padding: 0; display: grid; margin-bottom: var(--space-4); }
+.header__links a {
+  display: block; padding: var(--space-3) 0; font-weight: 500; text-decoration: none;
+  border-bottom: 1px solid var(--color-border); transition: color var(--duration-fast);
+}
+.header__links a:hover { color: var(--color-primary); }
+.header__nav .btn { width: 100%; }
+
+@keyframes menu-in { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: none; } }
+
+/* Escritorio: navegación en línea, sin hamburguesa */
+@media (min-width: 64rem) {
+  .header__toggle { display: none; }
+  .header__nav {
+    display: flex; align-items: center; gap: var(--space-8);
+    position: static; padding: 0; background: none; border: 0; box-shadow: none;
+  }
+  .header__links { display: flex; gap: var(--space-6); margin: 0; }
+  .header__links a { padding: var(--space-2) 0; border: 0; font-size: .95rem; color: var(--color-text-muted); }
+  .header__nav .btn { width: auto; }
+}

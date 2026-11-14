@@ -4,12 +4,12 @@
 .footer__tagline { margin-top: var(--space-3); max-width: 22rem; }
 .footer__heading { font-size: .8rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: #fff; }
 .footer__col ul { list-style: none; padding: 0; margin-top: var(--space-4); display: grid; gap: var(--space-2); }
-.footer__col a { text-decoration: none; transition: color .2s; }
+.footer__col a { display: inline-block; padding-block: .3rem; text-decoration: none; transition: color .2s; }
 .footer__col a:hover { color: #fff; text-decoration: underline; }
 .footer__bottom {
   display: grid; gap: var(--space-2);
   margin-top: var(--space-12); padding-top: var(--space-6);
-  border-top: 1px solid rgb(255 255 255 / .12); font-size: .85rem; color: rgb(255 255 255 / .55);
+  border-top: 1px solid rgb(255 255 255 / .12); font-size: .85rem; color: rgb(255 255 255 / .7);
 }
 
 @media (min-width: 40rem) { .footer__grid { grid-template-columns: repeat(2, 1fr); } }
